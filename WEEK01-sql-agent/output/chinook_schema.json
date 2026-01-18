@@ -1,0 +1,13 @@
+{
+    "albums": "Table: albums\nAlbumId (BIGINT, PRIMARY KEY)\nTitle (VARCHAR)\nArtistId (BIGINT, FOREIGN KEY -> artists.ArtistId)\n",
+    "artists": "Table: artists\nArtistId (BIGINT, PRIMARY KEY)\nName (VARCHAR)\n",
+    "customers": "Table: customers\nCustomerId (BIGINT, PRIMARY KEY)\nFirstName (VARCHAR)\nLastName (VARCHAR)\nCompany (VARCHAR)\nAddress (VARCHAR)\nCity (VARCHAR)\nState (VARCHAR)\nCountry (VARCHAR)\nPostalCode (VARCHAR)\nPhone (VARCHAR)\nFax (VARCHAR)\nEmail (VARCHAR)\nSupportRepId (BIGINT, FOREIGN KEY -> employees.EmployeeId)\n",
+    "employees": "Table: employees\nEmployeeId (BIGINT, PRIMARY KEY)\nLastName (VARCHAR)\nFirstName (VARCHAR)\nTitle (VARCHAR)\nReportsTo (BIGINT, FOREIGN KEY -> employees.EmployeeId)\nBirthDate (TIMESTAMP)\nHireDate (TIMESTAMP)\nAddress (VARCHAR)\nCity (VARCHAR)\nState (VARCHAR)\nCountry (VARCHAR)\nPostalCode (VARCHAR)\nPhone (VARCHAR)\nFax (VARCHAR)\nEmail (VARCHAR)\n",
+    "genres": "Table: genres\nGenreId (BIGINT, PRIMARY KEY)\nName (VARCHAR)\n",
+    "invoice_items": "Table: invoice_items\nInvoiceLineId (BIGINT)\nInvoiceId (BIGINT, FOREIGN KEY -> invoices.InvoiceId)\nTrackId (BIGINT, FOREIGN KEY -> tracks.TrackId)\nUnitPrice (DOUBLE)\nQuantity (BIGINT)\n",
+    "invoices": "Table: invoices\nInvoiceId (BIGINT, PRIMARY KEY)\nCustomerId (BIGINT, FOREIGN KEY -> customers.CustomerId)\nInvoiceDate (TIMESTAMP)\nBillingAddress (VARCHAR)\nBillingCity (VARCHAR)\nBillingState (VARCHAR)\nBillingCountry (VARCHAR)\nBillingPostalCode (VARCHAR)\nTotal (DOUBLE)\n",
+    "media_types": "Table: media_types\nMediaTypeId (BIGINT, PRIMARY)\nName (VARCHAR)\n",
+    "playlist_track": "Table: playlist_track\nPlaylistId (BIGINT, PRIMARY KEY)\nTrackId (BIGINT, FOREIGN KEY -> tracks.TrackId)\n",
+    "playlists": "Table: playlists\nPlaylistId (BIGINT, PRIMARY KEY)\nName (VARCHAR)\n",
+    "tracks": "Table: tracks\nTrackId (BIGINT, PRIMARY KEY)\nName (VARCHAR)\nAlbumId (BIGINT, FOREIGN KEY -> albums.AlbumId)\nMediaTypeId (BIGINT, FOREIGN KEY -> media_types.MediaTypeId)\nGenreId (BIGINT, FOREIGN KEY -> genres.GenreId)\nComposer (VARCHAR)\nMilliseconds (BIGINT)\nBytes (BIGINT)\nUnitPrice (DOUBLE)\n"
+}
