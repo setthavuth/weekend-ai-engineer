@@ -1,0 +1,24 @@
+﻿no.,question
+1," Provide a query showing Customers (just their full names, customer ID and country) who are not in the US"
+2, Provide a query only showing the Customers from Brazil
+3, Provide a query showing the Invoices of customers who are from Brazil
+4, Provide a query showing only the Employees who are Sales Agents
+5, Provide a query showing a unique list of billing countries from the Invoice table
+6, Provide a query showing the invoices of customers who are from Brazil
+7, Provide a query that shows the invoices associated with each sales agent
+8," Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers"
+9, How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
+10," Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for Invoice ID 37"
+11," Looking at the InvoiceLine table, provide a query that COUNTs the number of line items for each Invoice"
+12, Provide a query that includes the track name with each invoice line item
+13, Provide a query that shows the # of invoices per country
+14," Provide a query that shows all the Tracks, but displays no IDs"
+15, Provide a query that shows total sales made by each sales agent
+16, Which sales agent made the most in sales in 2009?
+17, Which sales agent made the most in sales in 2010?
+18, Which sales agent made the most in sales over all?
+19, Provide a query that shows the # of customers assigned to each sales agent
+20, Provide a query that shows the total sales per country
+21, Provide a query that shows the most purchased track of 2013
+22, Provide a query that shows the top 5 most purchased tracks over all
+23, Provide a query that shows the top 3 best selling artists
